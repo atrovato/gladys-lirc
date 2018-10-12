@@ -1,14 +1,15 @@
+const television = {
+  getState : require('./lib/lirc.getState.js'),
+  switchState : require('./lib/lirc.switchState.js'),
+  getCurrentChannel : require('./lib/lirc.getCurrentChannel.js'),
+  setChannel : require('./lib/lirc.setChannel.js')
+};
 
+/**
+ * Gladys LIRC module entry point, using the television API.
+ */
 module.exports = function(sails) {
-  var exec = require('./lib/exec.js');
-  var setup = require('./lib/setup.js');
-  var install = require('./lib/install.js');
-  var command = require('./lib/lirc.command.js');
-
   return {
-    exec: exec,
-    setup: setup,
-    install: install,
-    command: command
+    television: television
   };
 };
