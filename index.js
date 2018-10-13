@@ -13,12 +13,14 @@ const television = {
   stop : require('./lib/lirc.stop.js'),
   getSources : require('./lib/lirc.getSources.js')
 };
+const exec = require('./lib/exec.js');
 
 /**
  * Gladys LIRC module entry point, using the television API.
  */
 module.exports = function(sails) {
   return {
+    exec: exec,
     television: television
   };
 };
