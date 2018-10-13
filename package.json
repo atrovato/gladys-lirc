@@ -21,7 +21,7 @@
   },
   "homepage": "https://github.com/atrovato/gladys-lirc#readme",
   "dependencies": {
-    "lirc-client": "^2.0.0",
+    "lircv0.9.4_node": "^1.0.0",
     "bluebird": "^3.5.2"
   }
 }
