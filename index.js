@@ -10,7 +10,8 @@ const television = {
   volumeDown : require('./lib/lirc.volumeDown.js'),
   play : require('./lib/lirc.play.js'),
   pause : require('./lib/lirc.pause.js'),
-  stop : require('./lib/lirc.stop.js')
+  stop : require('./lib/lirc.stop.js'),
+  getSources : require('./lib/lirc.getSources.js')
 };
 
 /**
