@@ -11,7 +11,11 @@ const television = {
   play : require('./lib/lirc.play.js'),
   pause : require('./lib/lirc.pause.js'),
   stop : require('./lib/lirc.stop.js'),
-  getSources : require('./lib/lirc.getSources.js')
+  getSources : require('./lib/lirc.getSources.js'),
+  redButton : requilre('./lib/lirc.redButton.js'),
+  blueButton : requilre('./lib/lirc.blueButton.js'),
+  greenButton : requilre('./lib/lirc.greenButton.js'),
+  yellowButton : requilre('./lib/lirc.yellowButton.js')
 };
 const exec = require('./lib/exec.js');
 const setup = require('./lib/setup.js');
