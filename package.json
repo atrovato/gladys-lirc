@@ -4,7 +4,7 @@
   "description": "LIRC device manager for Gladys",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "./node_modules/.bin/istanbul cover ./node_modules/.bin/_mocha -- -u exports --reporter spec --recursive"
   },
   "keywords": [
     "gladys",
@@ -23,5 +23,11 @@
   "dependencies": {
     "lircv0.9.4_node": "^1.0.0",
     "bluebird": "^3.5.2"
+  },
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "istanbul": "^0.4.5",
+    "mocha": "^5.2.0",
+    "proxyquire": "^2.1.0"
   }
 }
