@@ -10,6 +10,7 @@ Then install Gladys module, and configure it to automatically create remotes as 
 It also implements the Gladys Television API according to following mapping :
 
 | TV API action | LIRC remote key |
+| ------------- |----------------:|
 | Switch state  | KEY_POWER       |
 | Set channel   | KEY_[0-9]       |
 | Volume up     | KEY_VOLUMEUP    |
